@@ -1,0 +1,206 @@
+body{
+    margin: auto 0;
+    font-family: arial;
+    background-color:;
+}
+
+
+.zone {
+   /* padding:30px 50px;
+    margin:40px 60px;*/
+    cursor:pointer;
+    display:inline-block;
+    /*color:#FFF;*/
+ /*   font-size:2em;*/
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.9) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.9) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.9) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.9) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/*..HEADER...*/
+
+
+
+/*..NAV..*/
+.main-nav{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size:1em; 
+    padding: 10px;
+    background-color: #040404;
+
+    
+}
+
+
+
+
+@media only screen and (max-width: 500px){
+    .main-nav{
+        font-size: 0.7em;
+        padding: 0;
+    }
+
+}
+
+
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+li{
+    
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+ a:hover{
+     color: grey;
+     text-decoration: none;
+ }
+
+/*...CAROUSEL...*/
+
+.container{
+    margin-top: 50px;
+    max-width: 100%;
+    display: block;
+}
+
+/*...COVER...*/
+.about{
+   margin-top: 0px;
+   background-color: #1C1C1C;
+   padding: 80px;
+   
+}
+
+.about > p {
+    color: white;
+    text-align: center;
+}
+
+.title{
+    font-size: 1.5em
+}
+
+
+/*...IMAGES...*/
+.grid-wrapper{
+    margin-top:10px;
+    display: grid;
+    grid-gap:100px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 400px));
+    background-color: #BCBCBC;
+    padding: 30px;
+}
+
+.box{
+    background-color:#1C1C1C;
+    padding: 0px;
+    margin: 90px;
+    cursor: pointer;
+    /*border-radius: 7px;*/
+}
+
+.box > img{
+    max-width: 100%;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width: 700px){
+    .box > img{
+        width: 100%;
+    }
+}
+
+.box > p {
+   color: #FFFFFF;
+   font-family: verdana;
+   text-align: center;
+
+
+}
+
+.box > a{
+    color: white;
+}
+
+
+.box > form{
+    text-align: center;
+    opacity: 0.7;
+}
+
+.box: hover{
+    opacity: 1.5;
+}
+
+/*...FORM...*/
+.log{
+   margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+.log > p{
+    color: white;
+    font-size:1.5em;
+}
+
+.log > form{
+    color: white;
+
+}
+
+input[type="text"]{
+    border-radius: 3px;
+    margin: 10px;
+}
+
+input[type="password"]{
+    border-radius: 3px;
+}
+
+input[type="submit"]{
+   background-color: black;
+   color: white;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    color:#9C9C9C;
+}
+
+/*...GIF...*/
+.final > img{
+    width: 100%
+}
+
+/*...FOOTER...*/
+
+footer > p{
+    text-align: center;
+    font-size: 1em !important;
+    color: black;
+    font-family: verdana;
+
+}
+
