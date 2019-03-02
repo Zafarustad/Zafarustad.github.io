@@ -1,31 +1,22 @@
 body{
     margin: auto 0;
-    font-family: arial;
-    background-color:;
+   font-family: 'Srisakdi', cursive;
 }
 
 
 .zone {
-   /* padding:30px 50px;
-    margin:40px 60px;*/
-    cursor:pointer;
     display:inline-block;
-    /*color:#FFF;*/
- /*   font-size:2em;*/
     border-radius:4px;
     border:1px solid #bbb;
     transition: all 0.3s linear;
 }
 
 .zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.9) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.9) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.9) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.9) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -webkit-box-shadow:rgba(0,0,0,1.5) 0px 10px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,1.5) 0px 10px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,1.5) 0px 10px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,1.5) 0px 10px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
-
-/*..HEADER...*/
-
 
 
 /*..NAV..*/
@@ -35,18 +26,16 @@ body{
     list-style: none;
     font-size:1em; 
     padding: 10px;
-    background-color: #040404;
-
+    background-color: #1E1E1E;
+    border-radius: 7px;
     
-}
-
-
+    }
 
 
 @media only screen and (max-width: 500px){
     .main-nav{
-        font-size: 0.7em;
-        padding: 0;
+        font-size:15px;
+        padding: 5px;
     }
 
 }
@@ -55,21 +44,17 @@ body{
 
 .sticky{
     position: fixed;
-    top: 0;
+    top: 0; 
     width: 100%;
     z-index: 1;
-}
-
-
-li{
-    
 }
 
 
 a{
     color: white;
     text-decoration: none;
-}
+    font-size: 1.3em;
+    }
  a:hover{
      color: grey;
      text-decoration: none;
@@ -78,6 +63,7 @@ a{
 /*...CAROUSEL...*/
 
 .container{
+    position: ;
     margin-top: 50px;
     max-width: 100%;
     display: block;
@@ -106,19 +92,21 @@ a{
     margin-top:10px;
     display: grid;
     grid-gap:100px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 400px));
-    background-color: #BCBCBC;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 300px));
+    justify-content: space-around;
+    background-color: #1E1E1E;
     padding: 30px;
 }
 
+
 .box{
     background-color:#1C1C1C;
-    padding: 0px;
-    margin: 90px;
+    padding:0px;
+    margin: 50px;
     cursor: pointer;
-    /*border-radius: 7px;*/
+    border: 0px ;
 }
-
+    
 .box > img{
     max-width: 100%;
     border-radius: 7px;
@@ -163,45 +151,57 @@ a{
 .log > p{
     color: white;
     font-size:1.5em;
+    font-family: 'Poiret One', cursive;
 }
 
 .log > form{
     color: white;
+    font-family: 'Poiret One', cursive;
 
 }
 
 input[type="text"]{
-    border-radius: 3px;
+    border-radius: 7px;
     margin: 10px;
-}
-
-input[type="password"]{
-    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    border: 0px;
 }
 
 input[type="submit"]{
-   background-color: black;
-   color: white;
-    border-radius: 4px;
+   background-color: transparent;
+   color: #9C9C9C;
+    border-radius: 6px;
     cursor:pointer;
+    border: 0.7px solid;
+    font-size: 1.2em;
+    font-family: 'Poiret One', cursive;
 }
 
 input[type="submit"]:hover{
     color:#9C9C9C;
+    background-color: transparent;
+    transition: 0.5s;
 }
 
 /*...GIF...*/
+.final{
+    margin-top: 10px;
+}
+
 .final > img{
     width: 100%
 }
 
 /*...FOOTER...*/
 
-footer > p{
+footer{
+    margin-top: 5px;
     text-align: center;
     font-size: 1em !important;
-    color: black;
+    color: white;
     font-family: verdana;
+    background-color: #1E1E1E
 
 }
 
